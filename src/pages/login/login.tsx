@@ -11,7 +11,7 @@ const [username, setUsername] = useState('');
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post('https://ibelieve-back-and.onrender.com', {
+      const res = await axios.post('https://ibelieve-back-and.onrender.com/api/login', {
         username, password
       });
       const token = res.data.token;
