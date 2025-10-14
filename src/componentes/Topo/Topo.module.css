@@ -1,0 +1,32 @@
+.container_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #54B7D7;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.link{
+    margin-right: 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+}
+.img{
+    width: 100px;
+    height: auto;
+}
+.links_lc{
+    text-decoration: none;
+    margin-right: 15px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    background-color: chocolate;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+}

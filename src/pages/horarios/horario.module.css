@@ -1,0 +1,22 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;
+    width: 100%;
+    min-height: 100vh;
+    background:linear-gradient(#54B7D7,#D2691E)
+}
+.container_card{
+   display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 1450px;
+    width: 100%;
+}
