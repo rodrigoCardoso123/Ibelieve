@@ -16,7 +16,6 @@ import PaginaDetalhesSitio from "./pages/detalhesPolos/IERB SITIO FRAGOSO/ierbSi
 import PaginaDetalhesJatoba from "./pages/detalhesPolos/IERB JATOBÁ/ierbJatobá.tsx"
 
 function App() {
-  
   return (
     <>
     <PedidosProvider>

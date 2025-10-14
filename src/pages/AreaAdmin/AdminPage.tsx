@@ -4,6 +4,7 @@ import { BsCoin } from "react-icons/bs";
 import { useState } from "react";
 
 interface Lancamento {
+  id: number;
   data: string;
   tipo: "Entrada" | "Saída";
   valor: number;

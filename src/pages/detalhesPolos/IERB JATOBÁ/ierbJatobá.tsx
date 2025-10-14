@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import estilos from './ierbJatobá.module.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import IERB from "./../../../../public/IERB-JATOBA.jpeg"
 import { isAdmin } from '../../../isadmin';
 
@@ -22,6 +22,7 @@ const initialSchedule: Schedule = {
 
 function PaginaDetalhesJatoba() {
   const { id } = useParams();
+  id
   const [schedule, setSchedule] = useState<Schedule>(initialSchedule);
 
  const admin = isAdmin();

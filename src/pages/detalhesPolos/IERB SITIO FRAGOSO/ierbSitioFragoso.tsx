@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import estilos from './ierbSitioFragoso.module.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import IERB from "./../../../../public/IERB-SITIO-FRAGOSO.jpg"
 import { isAdmin } from '../../../isadmin';
 
@@ -22,6 +22,7 @@ const initialSchedule: Schedule = {
 
 function PaginaDetalhesSitio() {
   const { id } = useParams();
+  id
   const [schedule, setSchedule] = useState<Schedule>(initialSchedule);
 
  const admin = isAdmin();

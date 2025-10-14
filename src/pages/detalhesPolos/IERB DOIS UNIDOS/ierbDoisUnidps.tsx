@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import estilos from './ierbDoisUnidos.module.css';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import IERB from "./../../../../public/IERB-DOIS-UNIDOS.jpg"
 import { isAdmin } from '../../../isadmin';
 
@@ -22,6 +22,7 @@ const initialSchedule: Schedule = {
 
 function PaginaDetalhesDoisUnidos() {
   const { id } = useParams();
+  id
   const [schedule, setSchedule] = useState<Schedule>(initialSchedule);
 
  const admin = isAdmin();
