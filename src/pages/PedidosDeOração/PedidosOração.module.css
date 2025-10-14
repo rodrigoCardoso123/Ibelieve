@@ -97,3 +97,34 @@
   color: black;
   font-weight: bold;
 }
+@media (max-width: 768px) {
+   .titulo{
+    font-size: 25px;
+}
+.subtitulo{
+    font-size: 15px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.container_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+  width: 100%;
+  min-height: 500px;
+  margin-top: 15px;
+}
+.card {
+  font-family: sans-serif;
+  background: rgba(255, 255, 255, 0.897);
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 430px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: auto;
+  margin-top: 25px;
+}
+}

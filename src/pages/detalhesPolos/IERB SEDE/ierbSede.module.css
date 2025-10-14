@@ -197,3 +197,95 @@
 .botaoRemover:hover {
   color: darkred;
 }
+@media (max-width: 768px) {
+  .main {
+    padding: 10px 5px;
+    min-height: auto;
+  }
+
+  .h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .tabelaContainer {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .container_informacoes {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .imagem {
+    width: 100%;
+    height: auto;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .nome_local {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .nome_igreja {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .endereco {
+    text-align: center;
+  }
+
+  .botaoCopiar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .iconesSociais {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .acoes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .botaoAcao {
+    width: 100%;
+  }
+
+  .compartilhar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .colunaDia {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .hora {
+    font-size: 14px;
+  }
+
+  .linhaEvento {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botaoAdicionar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .botaoRemover {
+    align-self: flex-end;
+  }
+}

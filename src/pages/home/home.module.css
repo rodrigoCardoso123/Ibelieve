@@ -55,4 +55,30 @@
     position: relative;
     top: 200px;
 }
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 36px;
+        margin-top: 45px;
+    }
 
+    .p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .butao {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .container_card {
+        flex-direction: column;
+        top: 100px;
+        gap: 12px;
+    }
+
+    .container_principal {
+        min-height: 80vh;
+        padding: 15px;
+    }
+}

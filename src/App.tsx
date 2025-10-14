@@ -1,7 +1,7 @@
 import {BrowserRouter,  Route,Routes} from "react-router-dom"
 import './App.css'
 import Topo from "./componentes/Topo/Topo"
-import Home from "./pages/home/home"
+import Home from "./pages/home/home.tsx"
 import Login from "./pages/login/login"
 import Horario from "./pages/horarios/horario"
 import ProtectedRoute from "./componentes/ProtectedRoute/ProtectedRoute.tsx"

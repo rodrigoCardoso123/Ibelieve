@@ -85,3 +85,17 @@ margin-bottom: 8px;
 .card_button:hover {
   background-color: #2980b9;
 }
+@media (max-width: 768px) {
+    .card_title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.card_text {
+  font-size: 15px;
+  color: #666;
+}
+.card_local{
+  font-size: 15px;
+    margin-bottom: 8px;
+}
+}

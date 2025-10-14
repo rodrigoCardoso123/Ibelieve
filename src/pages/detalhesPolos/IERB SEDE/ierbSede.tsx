@@ -60,7 +60,7 @@ function PaginaDetalhes() {
 
   return (
     <div className={estilos.main}>
-       <h1>Detalhes do Polo/Igreja</h1>
+       <h1 className={estilos.titulo}>Detalhes do Polo/Igreja</h1>
 
        <div className={estilos.container_informacoes}>
       <img src={IERB_SEDE} alt="Imagem da Igreja" className={estilos.imagem} />

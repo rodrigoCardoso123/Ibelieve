@@ -28,3 +28,8 @@
     margin-bottom: 25px;
     margin-top: 25px;
 }
+@media (max-width: 768px) {
+   .card{
+    width: 250px;
+   }
+}

@@ -157,9 +157,6 @@ form button:hover {
   cursor: pointer;
 }
 
-.tabela td button:first-child {
-  background-color: 
-}
 .relatorios{
     display: flex;
     flex-direction: row;
@@ -168,4 +165,115 @@ form button:hover {
     align-items: center;
     gap: 25px;
     width: 100%;
+}
+@media (max-width: 768px) {
+  .container_principal {
+    padding: 15px;
+    background-position: center;
+  }
+
+  .container_card {
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  .h1 {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .titulo_card {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .container_ess {
+    max-width: 500px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .contaier_ess_colum {
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+  }
+
+  .p_ess {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .dinheiro {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .container_lista {
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px;
+    box-shadow: none;
+  }
+.relatorios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+  .titulo_lista {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .tabela {
+    font-size: 14px;
+    display: block;
+    overflow-x: auto; /* Scroll horizontal para tabelas */
+  }
+
+  .tabela th, .tabela td {
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  form {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    gap: 20px;
+  }
+
+  form input,
+  form select {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  form button {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .relatorios {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+  }
+
+  .tabela td button {
+    margin-bottom: 6px;
+    max-width: 60px;
+    width: 100%;
+    font-size: 14px;
+  }
 }
