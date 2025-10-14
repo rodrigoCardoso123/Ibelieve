@@ -2,7 +2,6 @@ import estilos from "./horario.module.css"
 import { useEffect, useState } from 'react';
 import Cards from "../../componentes/CardPolos/cardsPolos";
 import axios from 'axios';
-import logo from "./../../../public/logo2.png"
 import IERB_SEDE from "./../../../public/IERB-SEDE2.jpg"
 import IERB_DOIS_UNIDOS from "./../../../public/IERB-DOIS-UNIDOS.jpg"
 import IERB_JATOBA from "./../../../public/IERB-JATOBA.jpeg"
@@ -10,7 +9,7 @@ import IERB_PASSARINHO from "./../../../public/IERB-PASSARINHO.jpeg"
 import IERB_SITIO from "./../../../public/IERB-SITIO-FRAGOSO.jpg"
 function Horario(){
   const [role, setRole] = useState(null);
-  const [data, setData] = useState('');
+  const [, setData] = useState('');
 
   const [cards, setCards] = useState([
     { id: 1, image: IERB_SEDE, local: "Recife/PE", title: "IERB SEDE", text: "Rua Guaçu, 18-Chão de Estrela", rota:"/IERB SEDE/ierbSede.tsx" },
