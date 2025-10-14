@@ -5,29 +5,41 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function Login() {
-const [username, setUsername] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
   const handleLogin = async () => {
     try {
+      console.log("Tentando login com:", username, password);
       const res = await axios.post('https://ibelieve-back-and.onrender.com/api/login', {
-        username, password
+        username,
+        password
       });
+      console.log("Resposta do backend:", res.data);
+
       const token = res.data.token;
+      if (!token) {
+        alert("Não veio token no retorno");
+        return;
+      }
+
       const payload = JSON.parse(atob(token.split('.')[1]));
+      console.log("Payload do token:", payload);
+
       localStorage.setItem('token', token);
       localStorage.setItem('role', payload.role);
+
       if (payload.role === 'admin') {
         navigate('/relatorios');
       } else {
-        navigate('/');
+        navigate('/');  // talvez queira uma rota de usuário específica
       }
-    } catch (err) {
-      alert('Login falhou');
+    } catch (err: any) {
+      console.error("Erro no login:", err.response?.data ?? err.message);
+      alert('Login falhou: ' + (err.response?.data?.message || err.message));
     }
   };
-
 
   return (
     <main className={estilos.main_container}>
