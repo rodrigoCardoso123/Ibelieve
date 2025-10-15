@@ -6,7 +6,7 @@ function AdminPedidos() {
 
   return (
     <div className={estilos.adminContainer}>
-      <h1>📋 Pedidos Recebidos</h1>
+      <h1 className={estilos.titulo}>📋 Pedidos Recebidos</h1>
       {pedidos.length === 0 ? (
         <p>Nenhum pedido recebido ainda.</p>
       ) : (
