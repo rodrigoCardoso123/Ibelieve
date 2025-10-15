@@ -4,7 +4,6 @@ import { FaCalendarAlt } from 'react-icons/fa';
 import { FaClock } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaChurch } from 'react-icons/fa';
-import { Link } from "react-router-dom";
 
 function Home(){
     return(
