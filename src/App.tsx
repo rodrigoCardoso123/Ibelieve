@@ -19,10 +19,8 @@ function App() {
   return (
     <>
     <PedidosProvider>
-      <div className="layout">
-          <BrowserRouter>
-          <div className="content">
-            <Topo/>
+          <BrowserRouter basename="/Ibelieve">
+           <Topo/>
             <Routes>
               <Route path="/IERB JATOBÁ/:id" element={<PaginaDetalhesJatoba/>} />
               <Route path="/IERB SITIO FRAGOSO/:id" element={<PaginaDetalhesSitio/>} />
@@ -47,9 +45,7 @@ function App() {
                 }></Route>
 
             </Routes>
-          </div>
           </BrowserRouter>
-      </div>
       </PedidosProvider>
     </>
   )

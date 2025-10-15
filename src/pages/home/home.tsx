@@ -4,6 +4,7 @@ import { FaCalendarAlt } from 'react-icons/fa';
 import { FaClock } from 'react-icons/fa';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { FaChurch } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 function Home(){
     return(
@@ -15,24 +16,28 @@ function Home(){
         </main>
         <section className={estilos.container_card}>
      <CardHome
-            imagem={<FaCalendarAlt size={60} color="#D2691E"/>}
+            imagem={<FaCalendarAlt size={60} color="#D2691E"/>} 
             titulo="Programações"
             descricao="Veja nossa agenda de eventos"
+            link="/horario"
         />
         <CardHome
             imagem={<FaClock size={60} color="#D2691E"/>}
             titulo="Horário dos Cultos"
             descricao="Confira horários dos cultos"
+            link="/horario"
         />
         <CardHome
             imagem={<FaMapMarkerAlt size={60} color="#D2691E"/>}
             titulo="Polos da Igreja"
             descricao="Encontre os nossos polos"
+            link="/horario"
         />
         <CardHome
             imagem={<FaChurch size={60} color="#D2691E"/>}
             titulo="Pedido de Oração"
             descricao="Envie seu pedido de oração"
+            link="/pedidosOração"
         />
         </section>
     </div>

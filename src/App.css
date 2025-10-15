@@ -12,4 +12,5 @@ html, body {
 
 .content {
   flex: 1; /* Isso faz com que o conteúdo cresça e empurre o rodapé para o fim */
+  background-color: black;
 }
