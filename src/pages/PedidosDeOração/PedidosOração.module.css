@@ -114,7 +114,7 @@
   max-width: 600px;
   width: 100%;
   min-height: 500px;
-  margin-top: 15px;
+  padding: 0 15px;
 }
 .card {
   font-family: sans-serif;
@@ -122,9 +122,12 @@
   padding: 15px;
   border-radius: 10px;
   width: 100%;
-  max-width: 430px;
+  max-width: 450px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   height: auto;
-  margin-top: 25px;
+}
+.texto_fundo{
+  font-size: 16px;
+  text-align: center;
 }
 }

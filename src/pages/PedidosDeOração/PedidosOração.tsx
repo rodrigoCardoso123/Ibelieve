@@ -126,7 +126,7 @@ function PedidosOração() {
           )}
         </form>
 
-        <p>Todos os pedidos são confidenciais e tratados com amor</p>
+        <p className={estilos.texto_fundo}>Todos os pedidos são confidenciais e tratados com amor</p>
 
       </section>
     </main>
