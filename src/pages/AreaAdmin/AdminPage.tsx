@@ -2,6 +2,8 @@ import estilos from "./AdminPage.module.css"
 import { BsArrowUpCircleFill,BsArrowDownCircleFill } from "react-icons/bs";
 import { BsCoin } from "react-icons/bs";
 import { useState } from "react";
+import * as XLSX from "xlsx";
+import { saveAs } from "file-saver";
 
 interface Lancamento {
   id: number;
@@ -22,6 +24,20 @@ function AdminPage(){
     { id: 6, data: "10/10/2025", tipo: "Saída", valor: 800, descricao: "Pagamento de contas" },
     { id: 7, data: "17/10/2025", tipo: "Entrada", valor: 1500, descricao: "Arrecadação" },
   ]);
+
+  const exportarParaExcel = () => {
+  const worksheet = XLSX.utils.json_to_sheet(lancamentos);
+  const workbook = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(workbook, worksheet, "Relatório");
+
+  const excelBuffer = XLSX.write(workbook, {
+    bookType: "xlsx",
+    type: "array",
+  });
+
+  const file = new Blob([excelBuffer], { type: "application/octet-stream" });
+  saveAs(file, "relatorio_financeiro.xlsx");
+};
 
   const [form, setForm] = useState<Omit<Lancamento, 'id'>>({
     data: "",
@@ -165,6 +181,7 @@ function AdminPage(){
 
         <section className={estilos.container_lista}>
         <h2 className={estilos.titulo_lista}>Lançamentos do Mês</h2>
+        <button onClick={exportarParaExcel} className={estilos.botao_exporta}>Exportar para Excel</button>
         <table className={estilos.tabela}>
           <thead>
             <tr>

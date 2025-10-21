@@ -166,6 +166,13 @@ form button:hover {
     gap: 25px;
     width: 100%;
 }
+.botao_exporta{
+  border-radius: 5px;
+  border: none;
+  background-color: #374B6A;
+  padding: 8px;
+  margin: 10px 0px;
+}
 @media (max-width: 768px) {
   .container_principal {
     padding: 15px;

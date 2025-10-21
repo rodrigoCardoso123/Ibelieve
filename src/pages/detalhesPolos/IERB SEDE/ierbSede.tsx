@@ -22,7 +22,7 @@ const initialSchedule: Schedule = {
 
 function PaginaDetalhes() {
   const { id } = useParams();
-  id
+  id 
   const [schedule, setSchedule] = useState<Schedule>(initialSchedule);
 
  const admin = isAdmin();
